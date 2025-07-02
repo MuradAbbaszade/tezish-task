@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e257a64d-6a12-4855-9af1-0819e19b1620" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/TezishApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/controller/DownloadController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/dto/LoginDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/dto/RegisterDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Authority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/model/DownloadToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/model/UserAuthority.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/repository/DownloadTokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/service/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/service/DownloadService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/service/PdfService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/service/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/util/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tezish-task" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tezish-task" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="tezish-task" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2zK1OYsc4hUfgcVTJzCrOH2m2LE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "onboarding.tips.debug.path": "C:/Users/DELL/tezish-task/src/main/java/org/example/Main.java",
+    "spring.configuration.checksum": "f5d81b9b55f70c282aa0a0fa11c1ed4e",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\DELL\tezish-task\src\main\resources\db\changelog\changes" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.TezishApplication">
+    <configuration name="tezish-task [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="tezish-task [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="LiferayDockerServerConfiguration" factoryName="Liferay Docker Server">
+      <option name="passParentEnvironments" value="true" />
+      <option name="workspaceLocation" value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="LiferayServerConfiguration" factoryName="Liferay Server">
+      <option name="alternativeJrePath" value="" />
+      <option name="alternativeJrePathEnabled" value="true" />
+      <option name="buildType" value="" />
+      <option name="bundleLocation" value="" />
+      <option name="developerMode" value="true" />
+      <option name="gogoShellPort" value="11311" />
+      <option name="passParentEnvironments" value="true" />
+      <option name="vmParameters" value="-Xmx2560m -XX:MaxMetaspaceSize=768m -XX:MetaspaceSize=768m" />
+      <envs>
+        <env name="USERDOMAIN_ROAMINGPROFILE" value="DESKTOP-VQ50BMG" />
+        <env name="PATH" value="$PROJECT_DIR$/../../../Program Files/Java/jdk-11/bin:null" />
+        <env name="EFC_6748_1592913036" value="1" />
+        <env name="PROCESSOR_LEVEL" value="6" />
+        <env name="SESSIONNAME" value="Console" />
+        <env name="ALLUSERSPROFILE" value="C:\ProgramData" />
+        <env name="PROCESSOR_ARCHITECTURE" value="AMD64" />
+        <env name="ANDROID_HOME" value="C:\Users\Dell" />
+        <env name="PSModulePath" value="C:\Users\DELL\Documents\WindowsPowerShell\Modules;" />
+        <env name="SystemDrive" value="$PROJECT_DIR$/../../.." />
+        <env name="EFC_6748_2283032206" value="1" />
+        <env name="EFC_6748_2775293581" value="1" />
+        <env name="USERNAME" value="DELL" />
+        <env name="ProgramFiles(x86)" value="C:\Program Files (x86)" />
+        <env name="FPS_BROWSER_USER_PROFILE_STRING" value="Default" />
+        <env name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
+        <env name="DriverData" value="C:\Windows\System32\Drivers\DriverData" />
+        <env name="ProgramData" value="C:\ProgramData" />
+        <env name="ProgramW6432" value="C:\Program Files" />
+        <env name="HOMEPATH" value="\Users\DELL" />
+        <env name="PROCESSOR_IDENTIFIER" value="Intel64 Family 6 Model 140 Stepping 1, GenuineIntel" />
+        <env name="ProgramFiles" value="C:\Program Files" />
+        <env name="PUBLIC" value="C:\Users\Public" />
+        <env name="windir" value="C:\WINDOWS" />
+        <env name="=::" value="::\" />
+        <env name="ZES_ENABLE_SYSMAN" value="1" />
+        <env name="IGCCSVC_DB" value="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAzAMfVDkmAUmW/zORKwGcZwQAAAACAAAAAAAQZgAAAAEAACAAAAD32OBZz3lIBQHSTRCv1bem/ILy4jYgHzDMJTUtOsjY+QAAAAAOgAAAAAIAACAAAAD3pSRQMApnMwoD9dJICnGATwbqPc9Wt4u8l0apoweheGAAAAACHmEV3rn15OEhgHDmBB2XZNrIk9DiFTp+8HhjqG9hNjWqj8Lw+7kTQsT7MsrhlIR21fzTfp9kbFarbXIeqt4oG3C7LvYIqIGs+0E5XAZ9ONABvIFvBySEs8UA1fBQgR9AAAAA4ZN9MV5kiy31aryiap5QgKXYGJR0YCBJws+P5FFVuCd25FISrS+ETwCWrQpS4XbN7KF682yG3VJ4snZbGytvVg==" />
+        <env name="EFC_19248_3789132940" value="1" />
+        <env name="LOCALAPPDATA" value="C:\Users\DELL\AppData\Local" />
+        <env name="USERDOMAIN" value="DESKTOP-VQ50BMG" />
+        <env name="FPS_BROWSER_APP_PROFILE_STRING" value="Internet Explorer" />
+        <env name="LOGONSERVER" value="\\DESKTOP-VQ50BMG" />
+        <env name="JAVA_HOME" value="$PROJECT_DIR$/../../../Program Files/Java/jdk-11" />
+        <env name="EFC_6748_3789132940" value="1" />
+        <env name="OneDrive" value="C:\Users\DELL\OneDrive" />
+        <env name="APPDATA" value="C:\Users\DELL\AppData\Roaming" />
+        <env name="CommonProgramFiles" value="C:\Program Files\Common Files" />
+        <env name="Path" value="C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files\dotnet\;C:\Users\DELL\platform-tools;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\DELL\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\DELL\AppData\Local\Programs\Python\Python311\;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\DELL\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.11;C:\Gradle\gradle-8.2.1\bin;C:\Users\DELL\AppData\Roaming\npm;C:\Users\DELL\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\Dell\platform-tools;C:\src\flutter\bin;C:\Users\DELL\.dotnet\tools" />
+        <env name="OS" value="Windows_NT" />
+        <env name="COMPUTERNAME" value="DESKTOP-VQ50BMG" />
+        <env name="CATALINA_HOME" value="C:\Users\DELL\Desktop\liferay-portal-tomcat-7.4.3.132-ga132-1739912568\liferay-portal\tomcat" />
+        <env name="ANDROID_SDK_ROOT" value="C:\Users\Dell" />
+        <env name="PROCESSOR_REVISION" value="8c01" />
+        <env name="CommonProgramW6432" value="C:\Program Files\Common Files" />
+        <env name="ComSpec" value="C:\WINDOWS\system32\cmd.exe" />
+        <env name="EFC_19248_1262719628" value="1" />
+        <env name="EFC_6748_1262719628" value="1" />
+        <env name="EFC_19248_2283032206" value="1" />
+        <env name="EFC_19248_2775293581" value="1" />
+        <env name="SystemRoot" value="C:\WINDOWS" />
+        <env name="TEMP" value="C:\Users\DELL\AppData\Local\Temp" />
+        <env name="HOMEDRIVE" value="$PROJECT_DIR$/../../.." />
+        <env name="USERPROFILE" value="C:\Users\DELL" />
+        <env name="TMP" value="C:\Users\DELL\AppData\Local\Temp" />
+        <env name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
+        <env name="NUMBER_OF_PROCESSORS" value="8" />
+        <env name="EFC_19248_1592913036" value="1" />
+        <env name="IDEA_INITIAL_DIRECTORY" value="C:\Program Files\JetBrains\IntelliJ IDEA 2023.1.4\bin" />
+      </envs>
+      <module name="tezish-task" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TezishApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="tezish-task.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.company.TezishApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.TezishApplication" />
+        <item itemvalue="Gradle.tezish-task [build]" />
+        <item itemvalue="Gradle.tezish-task [clean]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e257a64d-6a12-4855-9af1-0819e19b1620" name="Changes" comment="" />
+      <created>1751464923371</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1751464923371</updated>
+      <workItem from="1751464924405" duration="588000" />
+      <workItem from="1751470066518" duration="12598000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
