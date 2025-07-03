@@ -2,9 +2,11 @@ package com.company.controller;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
+import java.util.stream.Collectors;
 
 import com.company.dto.RegisterDTO;
 import com.company.dto.LoginDTO;
@@ -42,5 +44,17 @@ public class AuthController {
             return ResponseEntity.status(401).body(result);
         }
         return ResponseEntity.ok(result);
+    }
+
+    @GetMapping("/me")
+    public ResponseEntity<?> getMe(Authentication authentication) {
+        String username = authentication.getName();
+        var roles = authentication.getAuthorities().stream()
+                .map(a -> a.getAuthority())
+                .collect(Collectors.toList());
+        return ResponseEntity.ok(java.util.Map.of(
+            "username", username,
+            "roles", roles
+        ));
     }
 }

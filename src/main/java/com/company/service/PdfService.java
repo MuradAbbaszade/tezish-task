@@ -1,67 +1,69 @@
 package com.company.service;
 
+import com.itextpdf.io.image.ImageDataFactory;
 import com.itextpdf.kernel.pdf.PdfDocument;
 import com.itextpdf.kernel.pdf.PdfWriter;
 import com.itextpdf.layout.Document;
-import com.itextpdf.layout.element.Paragraph;
 import com.itextpdf.layout.element.Image;
-import com.itextpdf.io.image.ImageDataFactory;
+import com.itextpdf.layout.element.Paragraph;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+import java.nio.file.*;
+
 import java.util.UUID;
 
 @Service
 public class PdfService {
 
+    private static final String PDF_DIR = "src/main/resources/generated-pdfs";
+
     public String generatePdfWithUserInfo(String userFullName, MultipartFile imageFile) throws IOException {
-        Path pdfPath = createTempPdfPath();
+        Path pdfDirectory = ensurePdfDirectoryExists();
+        String fileName = "pdf_" + UUID.randomUUID() + ".pdf";
+        Path pdfPath = pdfDirectory.resolve(fileName);
 
         try (PdfWriter writer = new PdfWriter(pdfPath.toString());
-             PdfDocument pdf = new PdfDocument(writer);
-             Document document = new Document(pdf)) {
+             PdfDocument pdfDoc = new PdfDocument(writer);
+             Document document = new Document(pdfDoc)) {
 
-            addUserFullName(document, userFullName);
-            addImage(document, imageFile);
+            document.add(new Paragraph("User Full Name: " + userFullName));
+
+            if (imageFile != null && !imageFile.isEmpty()) {
+                addImageToDocument(document, imageFile);
+            } else {
+                document.add(new Paragraph("No image provided"));
+            }
+
+        } catch (Exception e) {
+            throw new IOException("Failed to generate PDF: " + e.getMessage(), e);
         }
 
         return pdfPath.toString();
     }
 
-    private Path createTempPdfPath() {
-        String fileName = "pdf_" + UUID.randomUUID() + ".pdf";
-        Path tempDir = Paths.get(System.getProperty("java.io.tmpdir"));
-        return tempDir.resolve(fileName);
+    public boolean isPdfFileExists(String pdfPath) {
+        return Files.exists(Paths.get(pdfPath));
     }
 
-    private void addUserFullName(Document document, String userFullName) {
-        Paragraph nameParagraph = new Paragraph("User Full Name: " + userFullName);
-        document.add(nameParagraph);
-    }
-
-    private void addImage(Document document, MultipartFile imageFile) {
-        if (imageFile == null || imageFile.isEmpty()) {
-            document.add(new Paragraph("No image provided"));
-            return;
+    private Path ensurePdfDirectoryExists() throws IOException {
+        Path path = Paths.get(PDF_DIR);
+        if (Files.notExists(path)) {
+            Files.createDirectories(path);
         }
+        return path;
+    }
 
+    private void addImageToDocument(Document document, MultipartFile imageFile) {
         try {
             byte[] imageBytes = imageFile.getBytes();
             Image image = new Image(ImageDataFactory.create(imageBytes));
             image.setWidth(200);
             image.setHeight(150);
             document.add(image);
-        } catch (Exception e) {
+        } catch (IOException e) {
             document.add(new Paragraph("Image could not be embedded: " + e.getMessage()));
         }
-    }
-
-
-    public boolean isPdfFileExists(String pdfPath) {
-        return Files.exists(Paths.get(pdfPath));
     }
 }

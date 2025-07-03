@@ -5,35 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e257a64d-6a12-4855-9af1-0819e19b1620" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/TezishApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/controller/DownloadController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/dto/LoginDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/dto/RegisterDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/model/Authority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/model/DownloadToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/model/UserAuthority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/repository/DownloadTokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/service/DownloadService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/service/PdfService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/service/TokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/util/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/exception/RestExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/config/SwaggerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/controller/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/controller/DownloadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/controller/DownloadController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/DownloadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/DownloadService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/PdfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/PdfService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/TokenService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,24 +75,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "C:/Users/DELL/tezish-task/src/main/java/org/example/Main.java",
-    "spring.configuration.checksum": "f5d81b9b55f70c282aa0a0fa11c1ed4e",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/DELL/tezish-task/src/main/java/org/example/Main.java&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;f5d81b9b55f70c282aa0a0fa11c1ed4e&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\DELL\tezish-task\src\main\resources\db\changelog\changes" />
@@ -189,7 +172,9 @@
         <env name="EFC_6748_2283032206" value="1" />
         <env name="EFC_6748_2775293581" value="1" />
         <env name="USERNAME" value="DELL" />
+        <env name="EFC_16464_2283032206" value="1" />
         <env name="ProgramFiles(x86)" value="C:\Program Files (x86)" />
+        <env name="EFC_16464_2775293581" value="1" />
         <env name="FPS_BROWSER_USER_PROFILE_STRING" value="Default" />
         <env name="PATHEXT" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC" />
         <env name="DriverData" value="C:\Windows\System32\Drivers\DriverData" />
@@ -212,6 +197,8 @@
         <env name="EFC_6748_3789132940" value="1" />
         <env name="OneDrive" value="C:\Users\DELL\OneDrive" />
         <env name="APPDATA" value="C:\Users\DELL\AppData\Roaming" />
+        <env name="EFC_16464_1262719628" value="1" />
+        <env name="EFC_16464_3789132940" value="1" />
         <env name="CommonProgramFiles" value="C:\Program Files\Common Files" />
         <env name="Path" value="C:\Program Files\Microsoft\jdk-11.0.16.101-hotspot\bin;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\nodejs\;C:\Program Files\PuTTY\;C:\Program Files\dotnet\;C:\Users\DELL\platform-tools;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Users\DELL\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\DELL\AppData\Local\Programs\Python\Python311\;C:\Users\DELL\AppData\Local\Microsoft\WindowsApps;C:\Users\DELL\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\DELL\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.11;C:\Gradle\gradle-8.2.1\bin;C:\Users\DELL\AppData\Roaming\npm;C:\Users\DELL\AppData\Local\Programs\cursor\resources\app\bin;C:\Users\Dell\platform-tools;C:\src\flutter\bin;C:\Users\DELL\.dotnet\tools" />
         <env name="OS" value="Windows_NT" />
@@ -219,6 +206,7 @@
         <env name="CATALINA_HOME" value="C:\Users\DELL\Desktop\liferay-portal-tomcat-7.4.3.132-ga132-1739912568\liferay-portal\tomcat" />
         <env name="ANDROID_SDK_ROOT" value="C:\Users\Dell" />
         <env name="PROCESSOR_REVISION" value="8c01" />
+        <env name="EFC_16464_1592913036" value="1" />
         <env name="CommonProgramW6432" value="C:\Program Files\Common Files" />
         <env name="ComSpec" value="C:\WINDOWS\system32\cmd.exe" />
         <env name="EFC_19248_1262719628" value="1" />
@@ -233,7 +221,7 @@
         <env name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
         <env name="NUMBER_OF_PROCESSORS" value="8" />
         <env name="EFC_19248_1592913036" value="1" />
-        <env name="IDEA_INITIAL_DIRECTORY" value="C:\Program Files\JetBrains\IntelliJ IDEA 2023.1.4\bin" />
+        <env name="IDEA_INITIAL_DIRECTORY" value="C:\Users\DELL\Desktop" />
       </envs>
       <module name="tezish-task" />
       <method v="2" />
@@ -268,7 +256,8 @@
       <option name="presentableId" value="Default" />
       <updated>1751464923371</updated>
       <workItem from="1751464924405" duration="588000" />
-      <workItem from="1751470066518" duration="12598000" />
+      <workItem from="1751470066518" duration="12922000" />
+      <workItem from="1751530151076" duration="10203000" />
     </task>
     <servers />
   </component>

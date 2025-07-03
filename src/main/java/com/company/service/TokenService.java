@@ -10,6 +10,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -34,14 +36,13 @@ public class TokenService {
         downloadToken.setToken(token);
         downloadToken.setUser(user);
         downloadToken.setPdfPath(pdfPath);
-        downloadToken.setExpiryTime(LocalDateTime.now().plusMinutes(tokenExpiryMinutes));
-        downloadToken.setUsed(false);
+        downloadToken.setExpiryTime(ZonedDateTime.now(ZoneId.of("Asia/Baku")).toLocalDateTime().plusMinutes(tokenExpiryMinutes));
         downloadTokenRepository.save(downloadToken);
         return token;
     }
 
     @Transactional
-    public String validateAndGetPdfPath(String token, String requestingUsername) {
+    public String validateAndGetPdfPath(String token) {
         return downloadTokenRepository.findByToken(token)
                 .filter(t -> !t.isUsed())
                 .filter(t -> LocalDateTime.now().isBefore(t.getExpiryTime()))

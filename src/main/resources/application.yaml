@@ -13,15 +13,22 @@ spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: &connectionUrl jdbc:mysql://${DB_CONNECTION_IP:localhost}:${DB_CONNECTION_PORT:3306}/tezish?allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&zeroDateTimeBehavior=convertToNull&useUnicode=true&characterEncoding=UTF-8
+    url: jdbc:mysql://localhost:3306/tezish?serverTimezone=Asia/Baku&useUnicode=true&characterEncoding=UTF-8
     username: root
     password: 1234
   liquibase:
     change-log: classpath:db.changelog/db.changelog-master.yaml
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          time_zone: Asia/Baku
+  jackson:
+    time-zone: Asia/Baku
 
 download:
   token:
-    expiry: 10
+    expiry: 3
 
 jwt:
   token:

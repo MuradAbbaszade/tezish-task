@@ -2,8 +2,8 @@ package com.company.controller;
 
 import com.company.service.DownloadService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -14,9 +14,9 @@ import org.springframework.web.multipart.MultipartFile;
 public class DownloadController {
     private final DownloadService downloadService;
 
-    @PostMapping("/generate-link")
+    @PostMapping(value = "/generate-link", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<?> generateDownloadLink(@RequestParam String userFullName,
-                                                  @RequestParam(required = false) MultipartFile imageFile) {
+                                                  @RequestPart(required = false) MultipartFile imageFile) {
         String username = SecurityContextHolder.getContext().getAuthentication().getName();
         return downloadService.generateDownloadLink(userFullName, imageFile, username);
     }

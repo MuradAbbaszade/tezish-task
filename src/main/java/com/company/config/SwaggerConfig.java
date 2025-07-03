@@ -31,7 +31,7 @@ public class SwaggerConfig {
         contact.setUrl("https://www.bezkoder.com");
 
         Info info = new Info()
-                .title("Pashapay")
+                .title("Tezish")
                 .version("1.0")
                 .contact(contact)
                 .description("This API exposes endpoints to manage tutorials.")

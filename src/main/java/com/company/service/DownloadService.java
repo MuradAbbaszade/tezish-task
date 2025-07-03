@@ -25,37 +25,33 @@ public class DownloadService {
         try {
             String pdfPath = pdfService.generatePdfWithUserInfo(userFullName, imageFile);
             String downloadToken = tokenService.generateDownloadToken(pdfPath, username);
-            String downloadLink = "/download/file?token=" + downloadToken;
             return ResponseEntity.ok(java.util.Map.of(
-                    "downloadLink", downloadLink,
+                    "token", downloadToken,
                     "message", "PDF generated and download link created successfully"
             ));
         } catch (IOException e) {
-            return ResponseEntity.internalServerError().body("Error generating PDF: " + e.getMessage());
+            throw new IllegalArgumentException(e.getMessage());
         }
     }
 
     @Transactional
     public ResponseEntity<?> downloadFile(String token) {
         try {
-            String tokenUsername = tokenService.getTokenUsername(token);
-            if (isInvalidToken(tokenUsername, token)) {
-                return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Invalid, used, or expired token");
-            }
+        String tokenUsername = tokenService.getTokenUsername(token);
+        String pdfPath = tokenService.validateAndGetPdfPath(token);
 
-            String pdfPath = tokenService.validateAndGetPdfPath(token, tokenUsername);
-            if (!pdfService.isPdfFileExists(pdfPath)) {
-                return ResponseEntity.notFound().build();
-            }
-
-            return buildPdfDownloadResponse(pdfPath);
-        } catch (Exception e) {
-            return ResponseEntity.internalServerError().body("Internal server error: " + e.getMessage());
+        if (pdfPath == null || tokenUsername == null) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Invalid, used, or expired token");
         }
-    }
 
-    private boolean isInvalidToken(String username, String token) {
-        return username == null || tokenService.validateAndGetPdfPath(token, username) == null;
+        if (!pdfService.isPdfFileExists(pdfPath)) {
+            return ResponseEntity.notFound().build();
+        }
+
+        return buildPdfDownloadResponse(pdfPath);
+        } catch (Exception e) {
+            throw new IllegalArgumentException(e.getMessage());
+        }
     }
 
     private ResponseEntity<Resource> buildPdfDownloadResponse(String pdfPath) {
