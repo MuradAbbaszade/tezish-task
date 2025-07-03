@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+    container_name: tezish-app
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://dpg-d1j809ur433s73fvr48g-a.oregon-postgres.render.com:5432/tezish
+      SPRING_DATASOURCE_USERNAME: tezish_user
+      SPRING_DATASOURCE_PASSWORD: IvoWOHkIvKGsTuBrfT6disy6ldeMJPUJ
+    ports:
+      - "8080:8080"
+
+volumes:
+  mysql-data:
