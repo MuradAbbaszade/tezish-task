@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e257a64d-6a12-4855-9af1-0819e19b1620" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/company/exception/RestExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/config/SwaggerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/config/SwaggerConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/controller/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/controller/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/controller/DownloadController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/controller/DownloadController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/DownloadService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/DownloadService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/PdfService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/PdfService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/company/service/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/company/service/TokenService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -257,7 +249,7 @@
       <updated>1751464923371</updated>
       <workItem from="1751464924405" duration="588000" />
       <workItem from="1751470066518" duration="12922000" />
-      <workItem from="1751530151076" duration="10203000" />
+      <workItem from="1751530151076" duration="10964000" />
     </task>
     <servers />
   </component>
