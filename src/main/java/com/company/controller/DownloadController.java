@@ -14,14 +14,14 @@ import org.springframework.web.multipart.MultipartFile;
 public class DownloadController {
     private final DownloadService downloadService;
 
-    @PostMapping(value = "/generate-link", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
     public ResponseEntity<?> generateDownloadLink(@RequestParam String userFullName,
                                                   @RequestPart(required = false) MultipartFile imageFile) {
         String username = SecurityContextHolder.getContext().getAuthentication().getName();
         return downloadService.generateDownloadLink(userFullName, imageFile, username);
     }
 
-    @GetMapping("/file")
+    @GetMapping
     public ResponseEntity<?> downloadFile(@RequestParam String token) {
         return downloadService.downloadFile(token);
     }

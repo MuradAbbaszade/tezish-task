@@ -213,7 +213,7 @@
         <env name="CommonProgramFiles(x86)" value="C:\Program Files (x86)\Common Files" />
         <env name="NUMBER_OF_PROCESSORS" value="8" />
         <env name="EFC_19248_1592913036" value="1" />
-        <env name="IDEA_INITIAL_DIRECTORY" value="C:\Users\DELL\Desktop" />
+        <env name="IDEA_INITIAL_DIRECTORY" value="C:\Program Files\JetBrains\IntelliJ IDEA 2023.1.4\bin" />
       </envs>
       <module name="tezish-task" />
       <method v="2" />
