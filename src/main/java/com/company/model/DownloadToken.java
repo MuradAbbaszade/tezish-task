@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 @Setter
 @ToString
 @Entity
-@Table(name = "download_tokens")
+@Table(name = "ogi")
 public class DownloadToken {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

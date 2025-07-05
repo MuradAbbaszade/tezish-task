@@ -45,8 +45,8 @@ public class SecurityConfig {
                 .and()
                 .authorizeRequests()
                 .antMatchers("/auth/login", "/auth/register").permitAll()
-                .antMatchers("/download/generate-link").hasRole("USER")
-                .antMatchers("/download/file").hasAnyRole("USER", "GUEST")
+                .antMatchers("/download/create").hasRole("USER")
+                .antMatchers("/download/get").hasAnyRole("USER", "GUEST")
                 .antMatchers(
                         "/swagger-ui/**",
                         "/swagger-ui.html",
